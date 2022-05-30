@@ -7,7 +7,7 @@ Unable to negotiate with x.x.x.x port 22: no matching cipher found. Their offer:
 Это значит, что клиент и сервер не могут договориться об алгоритме шифрования.
 Поэтому в ```/home/user/.ssh``` конкретного пользователя создаем/редактируем файл *config*. Итоговый конфиг выглядит так:
 ```bash
-Host *
+Host x.x.x.x
  KexAlgorithms +diffie-hellman-group1-sha1
  Ciphers aes128-cbc,3des-cbc,aes192-cbc,aes256-cbc
 ```
